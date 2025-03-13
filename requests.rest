@@ -1,0 +1,104 @@
+GET http://localhost:3000/healthcheck
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "email": "maxwellmoore307@gmail.com",
+    "username": "Maxwell",
+    "password": "password"
+}
+
+###
+
+GET http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "email": "maxwellmoore307@gmail.com",
+    "password": "password"
+}
+
+###
+
+DELETE http://localhost:3000/api/users
+Content-Type: application/json
+Authorization: Bearer 
+
+###
+
+POST http://localhost:3000/api/sessions
+Content-Type: application/json
+
+{
+    "email": "maxwellmoore307@gmail.com",
+    "username": "Maxwell",
+    "password": "password"
+}
+
+###
+
+GET http://localhost:3000/api/sessions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoyLCJpYXQiOjE3MTc4Nzk0NzEsImV4cCI6MTcxNzg3OTQ3MH0.ssLDGki_gRSfnNB4wQVAvL41HIQa8MeIFa-Gt8dGycNUn7GyD9tSpGoSXotB5SJmfUCK6dMWJXD81CwuSHoUmYsEn30gQa6IOW5jhZBuY9GWTJSqZqUYZO3KbGYhsYMyWcYk9AdtiWLpKZt-5tnjIylpRUIhHZBJlz_WyhumV10EtOKu1Hi29hVXMRDjG75tFQb-N_xVVs2ZEh2yD5mq-pjxBZcygMZEYdsMn4ndQzPky2vbL-ZICSa4dNgcL9B6LsLIr_3pFk9CvFUHqCcwvOaxyi7RMo4daEjPC1GqMpW5HqWthiuJmGHYgsy1sDqR-uF-ca_GlZlfXdXWE0WZBQ
+x-refresh: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoyLCJpYXQiOjE3MTc4Nzk0NzEsImV4cCI6MTc0OTQzNzA3MX0.ojUxeCmMA6wFSVc5s434C_CUCDxLN6XpjiQC4k9ushmArWguG7R5Y999xfh18YE88cmVd5Fpz90IAZn5Ttws6eMHv857ZRO-4dsxOZQqj29Trbx02AcMXbpBmSNP9aRvZSC3Rt4ueFe7O4OvxS4JZRVBRs9-Tt-LEsfRe_nTFj8ItDTjPqLIYBcijG9Ioh8bbadl7p0g8itBrZ1yzhCpcRo31JvNvHBJIYl6G9UU5yFKlisUc71wB3lfk2siUsw0BkBIyu5CSI_7-o-zm-nW9DYIzPDNW0zoQ1WacltaXRth6_VY-W0i3MV0fLySJ7Vrn4evAORpScXHdsMdOxeSOg
+
+###
+
+GET http://localhost:3000/api/sessions/:sessionId
+Content-Type: application/json
+Authorization: Bearer
+
+###
+
+DELETE http://localhost:3000/api/sessions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjo0LCJpYXQiOjE3MTc4NzU5ODksImV4cCI6MTcxNzg3Njg4OX0.1EyTJMLPcma70SzraxHXGrszALIS_jaJ5IsQgZrK3L16NCauIh5m2cinDNXKa7H75fWOfAUvBB1h1tGcypfoSGT9RLoGaqkUneg3JgoxjNLrxU0nZM8oV4vTlrs17P6FfA6ADf_pHCOgoFG2VY70-_foARn6_EPI4GpGo8YmAtWxnmuxN9iwmg5xd6aiyPAEvmnfBlgzeO6HlW-fIWl03hBbC8n5ZySE4t8ItDxxqNu_OfzK4l50qUFxG0dvYhxJ-0ltXb42GUce-nac_A4GPBIzkSxhlqT5EBklAr1v5Y6AJpo9qa0Rac9eVwbW6IlrHMLUKSyRrxF7LD8U2AgAsA
+ 
+
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoyLCJpYXQiOjE3MTc4ODg4MDcsImV4cCI6MTcxNzg4OTcwN30.n-3bfklg_HibtOzwZuDTDDDOtRIF-AF_5CWWo1mR4jRUsU2FvqvVHbenrhBxwNPEx4x6t1lgh886MqNQVw03hpUWUGLfen3jqpCqNm2p5kTvGIcbScrGUoFDqT6hk-Z3za_Ji_reH2_NsSPEM2gshIxk-wTd6x3qiWvBRY0QHWwwzlKKnMEjZmYBHOygacP0BdtTVUFiJiz5P_Ee9q5cRZOMETnnmVGJuhMg-6X-xhG0tu2HDDtr8-r_bOuKVUEUxJXnLe1OVfuYvrO--WomzmjgkpuPx0OXJOFMBQGKtqcCQYAPEVCPaA3-VAMJJCzrepjj_V2B8lNAwOR1FnHbRA
+
+{
+    "title": "Full Stack Developer",
+    "company": "Apple",
+    "status": "Applied"
+}
+
+###
+
+GET http://localhost:3000/api/products
+Content-Type: application/json
+Authorization: Bearer
+
+###
+
+GET http://localhost:3000/api/products/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoxLCJpYXQiOjE3MTc4ODcyNDQsImV4cCI6MTcxNzg4ODE0NH0.jTtZT9dNDDmNVYDn-DDK8pjh2-v8-Mp_P0ib-5cNyB5MFjIR5-bLRQM0NUaE_AHZNXcGSB99mEBxu3N59cCezA9fYCJ1aQd51p96PW4KqDF0vDJzlSouP_p7SHqAFp9Rp7l2MmKofLL_t8sAv_-zB6ksjFCR9TtUnXpw8yyQVvo5kTvklT24MJcSG2JB6WyZmFr2WdQnyl5FRr6WkH9KaVR3j_ANG0XJpgjtdMt0vnK0JFsh6kvXwEAUgPqLYWegt-vsa-NQ6XfMjjYN5j1CrFODPs-NsqmzF9PwJX4IbM-3kA7cpwMF5SUlJbi_xdBQOsiuvgW4vGJsCShB__WcmA
+
+###
+
+PUT http://localhost:3000/api/products/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoyLCJpYXQiOjE3MTc4ODg4MDcsImV4cCI6MTcxNzg4OTcwN30.n-3bfklg_HibtOzwZuDTDDDOtRIF-AF_5CWWo1mR4jRUsU2FvqvVHbenrhBxwNPEx4x6t1lgh886MqNQVw03hpUWUGLfen3jqpCqNm2p5kTvGIcbScrGUoFDqT6hk-Z3za_Ji_reH2_NsSPEM2gshIxk-wTd6x3qiWvBRY0QHWwwzlKKnMEjZmYBHOygacP0BdtTVUFiJiz5P_Ee9q5cRZOMETnnmVGJuhMg-6X-xhG0tu2HDDtr8-r_bOuKVUEUxJXnLe1OVfuYvrO--WomzmjgkpuPx0OXJOFMBQGKtqcCQYAPEVCPaA3-VAMJJCzrepjj_V2B8lNAwOR1FnHbRA
+
+{
+    "title": "Full Stack Developer",
+    "company": "Netflix",
+    "status": "Applied"
+}
+
+###
+
+DELETE http://localhost:3000/api/products/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Im1heHdlbGxtb29yZTMwN0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Ik1heHdlbGwiLCJwaWN0dXJlIjpudWxsLCJzZXNzaW9uX2lkIjoyLCJpYXQiOjE3MTc4ODg4MDcsImV4cCI6MTcxNzg4OTcwN30.n-3bfklg_HibtOzwZuDTDDDOtRIF-AF_5CWWo1mR4jRUsU2FvqvVHbenrhBxwNPEx4x6t1lgh886MqNQVw03hpUWUGLfen3jqpCqNm2p5kTvGIcbScrGUoFDqT6hk-Z3za_Ji_reH2_NsSPEM2gshIxk-wTd6x3qiWvBRY0QHWwwzlKKnMEjZmYBHOygacP0BdtTVUFiJiz5P_Ee9q5cRZOMETnnmVGJuhMg-6X-xhG0tu2HDDtr8-r_bOuKVUEUxJXnLe1OVfuYvrO--WomzmjgkpuPx0OXJOFMBQGKtqcCQYAPEVCPaA3-VAMJJCzrepjj_V2B8lNAwOR1FnHbRA
+
+###
